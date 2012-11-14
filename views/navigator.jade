@@ -1,0 +1,10 @@
+extends layout 
+block content
+	#navigatorContainer
+		input#navigateToFirst(type='image', src='/images/first.png')
+		input#navigateToPrevious(type='image', src='/images/previous.png')
+		input#navigateToNext(type='image', src='/images/next.png')
+		input#navigateToLast(type='image', src='/images/last.png')
+		input#removeCurrent(type='image', src='/images/remove.png')
+	script
+		initializeNavigator();
