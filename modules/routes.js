@@ -3,7 +3,7 @@ exports.routes = function () {
     return {
         initialize : function (app) {
             app.get('/', function (req, res) {
-                res.render('navigator');
+                res.render('navigationControl');
             });
         }
     };

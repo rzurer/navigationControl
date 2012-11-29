@@ -1,0 +1,43 @@
+.content{
+  font-family: Muli;
+  font-size: 13px;
+}
+.navigatorContainer{
+  font-size: 14px;
+  font-family: Muli;
+  width: 100%;
+  float: left;
+}
+.navigatorContainer input[type='image'] {
+  width: 24px;
+  height: 24px;
+  margin: 10px 0px;
+}
+.controlsContainer{
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}
+.controlsContainer select{
+  font-family: Muli;
+  font-size: 12px;
+  margin-right :10px;
+}
+.controlsContainer label{
+  margin-right :10px;
+  color: blue;
+  font-size: 11px;
+  font-weight: bold;
+}
+#removeCurrent {
+  width: 18px !important;
+  height: 18px!important;
+  margin-left: 200px!important;
+  margin-top: 0px!important;
+  padding-bottom: 5px;
+  border: 0px;
+}
+.output{
+  border: 1px solid gainsboro;
+  padding: 3px 10px;
+}
