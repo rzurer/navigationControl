@@ -1,4 +1,4 @@
-navigator
+Navigation Control
 =========
 
 A simple navigation control
