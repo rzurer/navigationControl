@@ -1,15 +1,12 @@
 'use strict';
-var local = true,
-    application,
-    express = require('express'),
-    fs = require('fs'),
-    jade = require('jade'),
-	flash = require('connect-flash'),
-	browserify = require('browserify'),
-    routes = require('./modules/routes').routes(),
-    config = require('./config'),
-    app = module.exports = express();
-config.configure(app, express, flash, browserify);
+var local, browserify, express, routes, config, app, application;
+local = false;
+browserify = require('browserify-middleware');
+express = require('express');
+routes = require('./modules/routes').routes();
+config = require('./config');
+app = express();
+config.configure(app, express, browserify);
 routes.initialize(app);
 application = app.listen(3333);
 if (local) {
